@@ -172,7 +172,7 @@ nav{
 .s3BoxIn{
 	float:left;
 	width:380px;
-	margin-left:195px;
+	margin-left:200px;
 	padding-left:20px;
 	border:1px solid blue;
 }

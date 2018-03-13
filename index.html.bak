@@ -85,19 +85,19 @@
         <section id="section3" class="section">
         	<img id="s3Back" src="images/back3.jpg" />
         	<div id="s3Box">
-	        	<div id="s3d1" class="s3BoxIn">
+	        	<div id="s3d1">
 	        		<p>MACHANICAL EQUIPMENT</p>
 	        		<p>高级机械设备</p>
 	        	</div>
-	        	<div id="s3d2" class="s3BoxIn">
+	        	<div id="s3d2">
 	        		<p>2222222222</p>
 	        		<p>高级机械设备</p>
 	        	</div>
-	        	<div id="s3d3" class="s3BoxIn">
+	        	<div id="s3d3">
 	        		<p>333333333333333333</p>
 	        		<p>高级机械设备</p>
 	        	</div>
-	        	<div id="s3d4" class="s3BoxIn">
+	        	<div id="s3d4">
 	        		<p>44444444444444444444</p>
 	        		<p>高级机械设备</p>
 	        	</div>
