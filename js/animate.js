@@ -17,8 +17,3 @@
             }
 		}
 
-		function flipBack(Animate){
-			var back1 = getDom("back1");
-			back1.classList.add('animated');
-			back1.classList.add(Animate);
-		}
