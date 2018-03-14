@@ -4,25 +4,26 @@ html,body{
 /********** 头部 **********/
 header{
 	width:1200px;
-	height:100px;
+	height:120px;
 	margin:0px auto;
 }
 #title{
 	font: normal 36px 微软雅黑;
 	color: #C00000;
-	line-height:100px;
+	line-height:150px;
 }
-
-.contact{
-	font: normal 24px Georgia;
+.contactBox{
 	float:right;
-	clear:right;
-	line-height:0px;
+	margin-top:20px;
+}
+.contact{
+	font: normal 24px 微软雅黑;	
+	line-height:10px;	
 }
 
 nav{
 	width:100%;
-	height:48px;
+	height:8px;
 	background:#C00000;
 }
 #nav{
@@ -113,7 +114,7 @@ nav{
 }
 #s2Box2{
 	margin-top:290px;
-	width:850px;
+	width:870px;
 	height:400px;
 }
 
@@ -139,7 +140,7 @@ nav{
 	color:#666;
 }
 .pContent{
-	font: normal 12px 微软雅黑;
+	font: normal 14px 微软雅黑;
 	color:#aaa;
 }
 #centerBox,#centerBox1{
@@ -178,5 +179,74 @@ nav{
 }
 /********** section4 **********/
 #section4{
-	height:400px;
+	height:500px;
+	overflow:none;
+	text-align:center;
+	padding-top:30px;
+}
+#s4Back{
+	position:absolute;
+	width:100%;
+	height:530px;
+	left:0;top:0;
+	z-index:-1;
+}
+
+.s4p{
+	font:normal 36px 微软雅黑;
+	color:white;
+	line-height:30px;
+}
+
+/********** section4 **********/
+
+#section5{
+	height:1300px;
+	overflow:none;
+	text-align:center;
+}
+#s5Box{
+	width:1200px;
+	margin:auto;
+}
+.s5Box1{
+	float:left;
+	margin-top:15px;
+}
+.s5Box2{
+	float:left;
+	width:80%;	
+}
+.s5Title{
+	float:left;
+	font:normal 20px 微软雅黑;	
+	color:black;
+	line-height:20px;
+}
+.s5Title1{
+	float:left;
+	margin:25px;
+	clear:right;
+	font:normal 16px 微软雅黑;	
+	line-height:20px;
+	color:#999;
+}
+.s5Line{
+	float:left;
+	clear:left;
+	color:#999;
+	text-align:left;
+	margin:0px;
+}
+.number{
+	float:left;
+	width:50px;
+	height:50px;
+	border:1px solid #C00000;
+	border-radius:25px;
+	text-align:center;
+	font:normal 36px 微软雅黑;
+	color:white;
+	background-color:#C00000;
+	margin:30px;
 }
