@@ -69,16 +69,20 @@ nav{
 }
 
 /********** 机械设备 专家 **********/
-#backInfo1, #backInfo2{
-	position:absolute;
-	margin:auto;
-	left:0;top:0;right:0;bottom:0;
-	width:800px;
+#backInfo1{
+	position:absolute;	
+	left:20%;top:0;right:0;bottom:0;
 	height:80px;
-	border-left:10px solid red;
+	border-left:8px solid red;
 	padding-left:10px;
 	margin-top:150px;
 	color:white;
+}
+#person{
+	position:absolute;
+	top:50px;
+	right:20%;
+	
 }
 
 #backInfoP1{
@@ -237,6 +241,7 @@ nav{
 	color:#999;
 	text-align:left;
 	margin:0px;
+	line-height:32px;
 }
 .number{
 	float:left;
@@ -249,4 +254,17 @@ nav{
 	color:white;
 	background-color:#C00000;
 	margin:30px;
+}
+
+/********** section6 **********/
+#section6{
+	float:left;
+	height:400px;
+}
+/********** footer **********/
+footer{
+	float:left;
+	height:180px;	
+	overflow:hidden;
+	background-color:#999;
 }

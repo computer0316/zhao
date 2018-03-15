@@ -29,4 +29,13 @@
 			setAnimation("s5Box3", "zoomIn");
 			setAnimation("s5Box4", "zoomIn");
 			setAnimation("s5Box5", "zoomIn");
+			
+			setAnimation("s6p1", "zoomIn");
+			setAnimation("s6p2", "zoomIn");
+			setAnimation("s6p3", "zoomIn");
+			setAnimation("s6p4", "zoomIn");
+			
+			setAnimation("s3Title", "zoomIn");
+			setAnimation("s3Sub", "zoomIn");
+			setAnimation("s5Box2", "zoomIn");
        })

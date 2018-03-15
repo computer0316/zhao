@@ -15,10 +15,16 @@
     <script src="js/animate.js"></script>
     </head>
     <body>
+<?php
+	if(isMobile()){
+		echo "请在电脑上浏览本网站。";
+		return false;
+	}
+?>
         <header>
 			<span id="title">赵先仲个人网站</span>
 			<div class="contactBox">
-				<p id="tel" class="contact">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#C00000;">Tel：</span><span style="letter-spacing:3px;">13803161552</span></p>
+				<p id="tel" class="contact">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#C00000;">Tel：</span><span style="letter-spacing:6px;">13803161552</span></p>
 				<p id="email" class="contact"><span style="color:#C00000;">Email：</span>htjxzxzh@163.com</p>
 			</div>
         </header>
@@ -28,13 +34,14 @@
         	</div>
         </nav>
         <section id="section1" class="section">
+        	<img id="person" src="images/zhao.jpg" />
         	<div id="backInfo1">
         		<div class="rectangle"></div>
         		<p id="backInfoP1">机械设备</p>
         		<p id="backInfoP2">Mechanical equipment</p>
         		<img id="backInfoImg" src="images/expert.png" />
 	       		<p>本科毕业于哈尔滨工业大学机械设置制造及其自动化专业。</p>
-        		<p>1994年在德国雷根斯堡高等工程学院做访问学者，主研CAD/CAM技术，计算机辅助设计方法，软件应用，参数化设计方法，计算机辅助制造加工程序设计方法。</p>
+        		<p>1994年在德国雷根斯堡高等工程学院做访问学者，主研CAD/CAM技术，计算机辅助设计方法，<br />软件应用，参数化设计方法，计算机辅助制造加工程序设计方法。</p>
         		<p>2000-2002年在北京航空航天大学学习研究生课程。</p>
         	</div>
         	<img id="back" src="images/back0.jpg" />
@@ -76,7 +83,7 @@
 	        	</div>
 	        </div>
 	        <div id="centerBox">
-	        	<img src="images/circleLine.png" />
+	        	<img src="images/circleline.png" />
 	        </div>
 	        <div id="centerBox1">
 	        	<p style="font-size:32px;color:#C40000;">Mechanical</p>
@@ -163,10 +170,16 @@
         		</div>
         	</div>
         </section>
-
+		<section id="section6" class="section" style="background-color:#C00000;">
+        	
+			<p id="s6p1" style="color:white;font-size:24px;text-align:center;margin-top:60px;">期望工作地点</p>
+			<p id="s6p2" style="font:normal 36px 微软雅黑;color:white;margin:150x auto;text-align:center;">北京&nbsp;&nbsp;&nbsp;苏州&nbsp;&nbsp;&nbsp;杭州&nbsp;&nbsp;&nbsp;宁波&nbsp;&nbsp;&nbsp;昆山</p>
+			<p id="s6p3" style="color:white;font-size:24px;text-align:center;margin-top:60px;">期望薪资水平</p>
+			<p id="s6p4" style="font:normal 36px 微软雅黑;color:white;margin:150x auto;text-align:center;">300000 / 年</p>
+		</section>
         <section id="section3" class="section" style="text-align:center;padding-top:15px;height:500px;">
-        	<p class="sectionTitle">能力水平</p>
-			<p class="sectionLine">本人理论水平及设计能力简述</p>
+        	<p id="s3Title" class="sectionTitle">能力水平</p>
+			<p id="s3Sub" class="sectionLine">本人理论水平及设计能力简述</p>
         	<div id="s5Box">
 				<div class="s5Box1">
 					<div style="float:left;width:110px;">&nbsp;</div>
@@ -189,9 +202,48 @@
 			</div>
         </section>
 
-        <footer>
-
+        <footer class="section">
+			<img src="images/back5.jpg" />
+			<div style="position:absolute;width:400px;margin:auto;left:0;top:15px;right:0;bottom:0;">
+				<p style="font-size:18px;color:white;">与我联系</p>
+				<p style="font-size:14px;color:white;">电话：13803161552</p>
+				<p style="font-size:14px;color:white;">邮箱：htjxzxzh@163.com</p>
+			</div>
         </footer>
     </body>
     <script src="js/index.js"></script>
     </html>
+    
+<?php
+	function isMobile(){
+		$_SERVER['ALL_HTTP'] = isset($_SERVER['ALL_HTTP']) ? $_SERVER['ALL_HTTP'] : '';
+		$mobile_browser = '0';
+		if(preg_match('/(up.browser|up.link|mmp|symbian|smartphone|midp|wap|phone|iphone|ipad|ipod|android|xoom)/i', strtolower($_SERVER['HTTP_USER_AGENT'])))	$mobile_browser++;
+		if((isset($_SERVER['HTTP_ACCEPT'])) and (strpos(strtolower($_SERVER['HTTP_ACCEPT']),'application/vnd.wap.xhtml+xml') !== false))	$mobile_browser++;
+		if(isset($_SERVER['HTTP_X_WAP_PROFILE']))	$mobile_browser++;
+		if(isset($_SERVER['HTTP_PROFILE']))	$mobile_browser++;
+		$mobile_ua = strtolower(substr($_SERVER['HTTP_USER_AGENT'],0,4));
+		$mobile_agents = array(
+		'w3c ','acs-','alav','alca','amoi','audi','avan','benq','bird','blac',
+		'blaz','brew','cell','cldc','cmd-','dang','doco','eric','hipt','inno',
+		'ipaq','java','jigs','kddi','keji','leno','lg-c','lg-d','lg-g','lge-',
+		'maui','maxo','midp','mits','mmef','mobi','mot-','moto','mwbp','nec-',
+		'newt','noki','oper','palm','pana','pant','phil','play','port','prox',
+		'qwap','sage','sams','sany','sch-','sec-','send','seri','sgh-','shar',
+		'sie-','siem','smal','smar','sony','sph-','symb','t-mo','teli','tim-',
+		'tosh','tsm-','upg1','upsi','vk-v','voda','wap-','wapa','wapi','wapp',
+		'wapr','webc','winw','winw','xda','xda-'
+		);
+		if(in_array($mobile_ua, $mobile_agents))		$mobile_browser++;
+		if(strpos(strtolower($_SERVER['ALL_HTTP']), 'operamini') !== false)	$mobile_browser++;
+		// Pre-final check to reset everything if the user is on Windows
+		if(strpos(strtolower($_SERVER['HTTP_USER_AGENT']), 'windows') !== false)	$mobile_browser=0;
+		// But WP7 is also Windows, with a slightly different characteristic
+		if(strpos(strtolower($_SERVER['HTTP_USER_AGENT']), 'windows phone') !== false)		$mobile_browser++;
+		if($mobile_browser>0)
+			return true;
+		else
+			return false;
+	}
+	
+	
