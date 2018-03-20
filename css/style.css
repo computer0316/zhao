@@ -259,12 +259,26 @@ nav{
 /********** section6 **********/
 #section6{
 	float:left;
-	height:400px;
+	height:260px;
 }
 /********** footer **********/
 footer{
 	float:left;
-	height:180px;	
+	height:90px;	
 	overflow:hidden;
 	background-color:#999;
+}
+#video{
+	width:100%;
+	float:left;
+	height:1000px;
+}
+#videoBox{
+	width:1200px;
+	margin:0px auto;
+}
+.video{
+	width:240px;
+	height:180px;
+	margin:15px 26px;
 }
