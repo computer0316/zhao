@@ -270,12 +270,12 @@ footer{
 }
 #video{
 	width:100%;
-	float:left;
 	height:1000px;
 }
 #videoBox{
 	width:1200px;
 	margin:0px auto;
+	
 }
 .video{
 	width:240px;
